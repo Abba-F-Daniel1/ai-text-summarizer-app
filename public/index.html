@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Text Summarizer</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1 class="animate-fade-up gradient-text">AI Text Summarizer</h1>
+        <p class="animate-fade-up header-description">
+            Transform lengthy texts into concise summaries using the power of AI.
+            Perfect for articles, research papers, or any text document.
+        </p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="summarizer-grid">
+            <div class="card">
+                <textarea 
+                    placeholder="Paste your text here to summarize... (Min: 200 chars, Max: 100,000 chars)" 
+                    class="textarea"
+                    maxlength="100000"
+                  id="text_to_summarize"
+                ></textarea>
+                <button id="submit-button" class="button button-primary">
+                    <span class="button-text">Summarize</span>
+                </button>
+            </div>
+            
+            <div class="card pop">
+                <textarea  id="summary"
+                    placeholder="Your summary will appear here..."
+                    class="textarea textarea-result"
+                    readonly
+                ></textarea>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Want to build this app?</h2>
+                    <p>
+                        Join Postman's Student Program and enhance your software development skills. 
+                        Learn API integration and boost your career prospects.
+                    </p>
+                  <a href="https://www.postman.com/student-program/student-expert/?utm_campaign=CGC&utm_medium=referral&utm_source=internal&utm_term=pbl-skilljar&utm_content=pbl_summariser_app" target="_blank" rel="noopener nofollow"><button  class="button button-primary">Register as Student
+                     </button></a>
+                </div>
+                <div class="cta-image">
+                    <div class="image-overlay"></div>
+                    <img src="images/learning.png" alt="Learning illustration" />
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>About</h3>
+                    <p>
+                        AI Text Summarizer helps you extract key information from any text quickly and efficiently.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="https://www.x.com/frederickabba" target="_blank" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.github.com/abba-f-daniel1" target="_blank" aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Text Summarizer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<!-- javascript -->
+  <script src="script.js"></script>
+</body>
+</html>
