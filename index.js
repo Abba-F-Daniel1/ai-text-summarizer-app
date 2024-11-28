@@ -1,12 +1,18 @@
 const express = require('express');
-
 const summarizeText = require('./summarize.js');
+const cors = require('cors');
 
 const app = express();
 const port = 3000;
 
 // Parses JSON bodies (as sent by API clients)
 app.use(express.json());
+
+// Enables CORS for all requests
+app.use(cors({
+  origin: 'https://ai-text-summarizer-app-chi.vercel.app/',
+  methods: ['POST']
+}));
 
 // Serves static files from the 'public' directory
 app.use(express.static('public'));
